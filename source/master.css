@@ -1,0 +1,125 @@
+/*
+#    /$$$$$$                        /$$
+#   /$$__  $$                      | $$
+#  | $$  \__/  /$$$$$$  /$$$$$$$  /$$$$$$    /$$$$$$$
+#  | $$$$     /$$__  $$| $$__  $$|_  $$_/   /$$_____/
+#  | $$_/    | $$  \ $$| $$  \ $$  | $$    |  $$$$$$
+#  | $$      | $$  | $$| $$  | $$  | $$ /$$ \____  $$
+#  | $$      |  $$$$$$/| $$  | $$  |  $$$$/ /$$$$$$$/
+#  |__/       \______/ |__/  |__/   \___/  |_______/
+#
+#
+#
+*/
+
+
+/*
+#                                                               /$$
+#                                                              | $$
+#    /$$$$$$   /$$$$$$  /$$$$$$$   /$$$$$$   /$$$$$$   /$$$$$$ | $$
+#   /$$__  $$ /$$__  $$| $$__  $$ /$$__  $$ /$$__  $$ |____  $$| $$
+#  | $$  \ $$| $$$$$$$$| $$  \ $$| $$$$$$$$| $$  \__/  /$$$$$$$| $$
+#  | $$  | $$| $$_____/| $$  | $$| $$_____/| $$       /$$__  $$| $$
+#  |  $$$$$$$|  $$$$$$$| $$  | $$|  $$$$$$$| $$      |  $$$$$$$| $$
+#   \____  $$ \_______/|__/  |__/ \_______/|__/       \_______/|__/
+#   /$$  \ $$
+#  |  $$$$$$/
+#   \______/
+*/
+* { box-sizing: border-box; }
+
+html { font-size: 100%; }
+
+.home-intro{
+	background-color: black;
+	width: 50%;
+	margin: auto;
+	color: white;
+	padding: 2rem;
+	margin-top: 2rem;
+}
+
+.section{
+	background: darkgray;
+	color: dimgrey;
+	width: 33%;
+	display: block;
+	margin: auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.resume-wrap{
+	background: dimgrey; 
+	padding: 2rem;
+}
+
+
+.contact-input{
+	display: inline-block;
+	background-color: dimgrey;
+	width: 50%;
+	padding-left: 15%;
+}
+
+.contact-info{
+	display: inline-block;
+	float: right;
+	width: 50%;
+	background-color: lightgrey;
+	padding-left: 15%;
+}
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------
+
+
+
+@media screen and (min-width: 635px) {
+    .home-intro {
+        background-color: white;
+        color: black;
+    }
+} 
+
+
+@media screen and (min-width: 879px) {
+    .home-intro {
+        background-color: teal;
+        color: black;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        background-color: teal;
+        color: white; 
+    }
+
+    .resume-wrap{
+    	background: black;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .section {
+        background-color: eggshell;
+        color: black; 
+    }
+
+    .resume-wrap{
+    	background: black;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .contact-input{
+    	display: block;
+    	width: 100%;
+    }
+    .contact-info {
+    	display: block;
+    	float: left;
+		width: 100%;
+      }
+}
