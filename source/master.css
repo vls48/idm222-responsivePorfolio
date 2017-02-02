@@ -83,17 +83,21 @@ html { font-size: 100%; }
 } 
 
 
-@media screen and (min-width: 879px) {
+@media screen and (max-width: 879px) {
     .home-intro {
         background-color: teal;
         color: black;
+        font-size: .7rem;
+        transition: font-size 1s ease;
     }
 }
 
 @media screen and (max-width: 600px) {
     .section {
         background-color: teal;
-        color: white; 
+        color: white;
+        font-size: .6rem;
+        transition: font-size 1s ease; 
     }
 
     .resume-wrap{
@@ -103,7 +107,7 @@ html { font-size: 100%; }
 
 @media screen and (min-width: 1000px) {
     .section {
-        background-color: eggshell;
+        background-color: lightgrey;
         color: black; 
     }
 
