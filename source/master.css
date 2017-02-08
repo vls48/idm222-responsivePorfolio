@@ -57,17 +57,15 @@ html { font-size: 100%; }
 
 .contact-input{
 	display: inline-block;
-	background-color: dimgrey;
-	width: 50%;
-	padding-left: 15%;
+    text-align: center;
+    margin-top: 15%;
 }
 
 .contact-info{
 	display: inline-block;
 	float: right;
-	width: 50%;
-	background-color: lightgrey;
-	padding-left: 15%;
+    text-align: center;
+    margin-top: 15%;
 }
 
 .text{
@@ -82,18 +80,52 @@ body{
 img#upcoming{
     display: block;
     margin: auto;
-    padding-top: 1rem;
+    padding: .5rem 0rem 0rem;
+    max-width: 100%;
 }
 
 .text-upcoming{
     text-align: center;
     margin-bottom: 5rem;
 }
+
+.text-upcoming p{
+    margin: 0rem;
+}
+
 .text-resume{
     text-align: center;
     font-size: 2rem;
 }
 
+.award{
+    padding-top: 5rem;
+}
+
+.text-honors h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+img.award{
+    display: block;
+    margin: auto;
+}
+
+.text-honors li{
+    display: block;
+    margin: 1rem;
+    text-align: left;
+}
+
+.social{
+    margin-top: 17%;
+}
+
+.contact-info li{
+    display: block;
+    margin: 1rem;
+}
 /*--------------------------------------------------------
 NAV
 --------------------------------------------------------*/
@@ -102,7 +134,7 @@ NAV
     background-color: #a6a6a6;
     text-align: center;
     position: fixed;
-    bottom: 0px;
+    bottom: -17px;
     width: 100%;
 }
 
@@ -111,16 +143,23 @@ nav ul{
     margin: 0;
 }
 
-/*li{
+li{
     display: inline-block;
     margin: 1.5rem 4rem;
 }
-*/
+
 ul li a{
     color: white;
     text-decoration: none;
 }
 
+.imagesize{
+    max-width: 100%;
+}
+
+img.token{
+    max-width: 45%;
+}
 /*--------------------------------------------------------
 GRID SYSTEM
 --------------------------------------------------------*/
