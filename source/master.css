@@ -81,7 +81,7 @@ img#upcoming{
     display: block;
     margin: auto;
     padding: .5rem 0rem 0rem;
-    max-width: 100%;
+    max-width: 800px;
 }
 
 .text-upcoming{
@@ -126,6 +126,14 @@ img.award{
     display: block;
     margin: 1rem;
 }
+
+.imagesize{
+    max-width: 100%;
+}
+
+img.token{
+    max-width: 45%;
+}
 /*--------------------------------------------------------
 NAV
 --------------------------------------------------------*/
@@ -153,13 +161,6 @@ ul li a{
     text-decoration: none;
 }
 
-.imagesize{
-    max-width: 100%;
-}
-
-img.token{
-    max-width: 45%;
-}
 /*--------------------------------------------------------
 GRID SYSTEM
 --------------------------------------------------------*/
@@ -196,8 +197,8 @@ GRID SYSTEM
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
 
-
-
+/*media queries from week 4, not ready to impliment into actual code yet but keeping examples for refernces
+/*
 @media screen and (min-width: 635px) {
     .home-intro {
         background-color: white;
@@ -250,3 +251,4 @@ GRID SYSTEM
 		width: 100%;
       }
 }
+*/
