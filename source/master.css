@@ -30,6 +30,47 @@
 
 html { font-size: 100%; }
 
+@keyframes highlighter {
+    to {
+        text-shadow: 0 0 5px #FFFFFF;
+    }
+}
+
+.active{
+    animation: highlighter 1s infinite alternate;
+}
+
+input{
+    background-color: rgba(255,255,255, .5);
+    border: 2px solid darkgrey;
+    border-radius: 6px;
+    color: white;
+}
+
+input.forms{
+    width: 450px;
+    height: 30px;
+}
+
+input#message{
+    width: 450px;
+    height: 150px;
+}
+
+input#send{
+    width: 200px;
+    height: 30px;
+    background-color: rgba(255,255,255, 0);
+}
+
+body{
+    background-color: #222222;
+    color: white;
+}
+
+/*=-------------------------------=
+HOME
+=-------------------------------=*/
 .home-intro{
 	background-color: black;
 	width: 50%;
@@ -49,39 +90,30 @@ html { font-size: 100%; }
 	padding-right: 1rem;
 }
 
-.resume-wrap{
-	background: dimgrey; 
-	padding: 2rem;
-}
-
-
-.contact-input{
-	display: inline-block;
-    text-align: center;
-    margin-top: 15%;
-}
-
-.contact-info{
-	display: inline-block;
-	float: right;
-    text-align: center;
-    margin-top: 15%;
-}
-
 .text{
     text-align: right;
+    padding-right: 30px; 
 }
 
-body{
-    background-color: #222222;
-    color: white;
+.col-6.home-text{
+    padding-top: 200px;
 }
+
+img#homeselfie{
+    max-width: 500px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+/*=-------------------------------=
+UPCOMING
+=-------------------------------=*/
 
 img#upcoming{
     display: block;
     margin: auto;
     padding: .5rem 0rem 0rem;
-    max-width: 800px;
+    max-width: 700px;
 }
 
 .text-upcoming{
@@ -91,6 +123,14 @@ img#upcoming{
 
 .text-upcoming p{
     margin: 0rem;
+}
+
+/*=-------------------------------=
+RESUME
+=-------------------------------=*/
+.resume-wrap{
+    background: dimgrey; 
+    padding: 2rem;
 }
 
 .text-resume{
@@ -118,8 +158,25 @@ img.award{
     text-align: left;
 }
 
+/*=-------------------------------=
+CONTACT
+=-------------------------------=*/
+.contact-input{
+    display: inline-block;
+    text-align: center;
+    margin-top: 7%;
+}
+
+.contact-info{
+    display: inline-block;
+    float: right;
+    text-align: center;
+    margin-top: 15%;
+}
+
 .social{
     margin-top: 17%;
+    filter: grayscale(100%);
 }
 
 .contact-info li{
@@ -193,6 +250,27 @@ GRID SYSTEM
 .col-10 {width: 83.33%;}
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
+
+.wrap-flex{
+    display: flex;
+    flex-flow: row wrap;
+    background-color: tomato;
+    justify-content: center;
+    max-width: 60%;
+    padding-top: 20px;
+    margin: 0;
+}
+
+.wrap-flex > *{
+background-color: blue;
+padding: 10px;
+}
+
+.icon{
+    display: flex;
+    background-color: tomato;
+    max-width: 40%;
+}
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
