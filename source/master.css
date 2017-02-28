@@ -41,10 +41,10 @@ html { font-size: 100%; }
 }
 
 input{
-    background-color: rgba(255,255,255, .5);
+    background-color: rgba(255,255,255, .7);
     border: 2px solid darkgrey;
     border-radius: 6px;
-    color: white;
+    color: #706F62;
 }
 
 input.forms{
@@ -64,8 +64,11 @@ input#send{
 }
 
 body{
-    background-color: #222222;
-    color: white;
+    background-color: #D7D0C8;
+    background-image: url('images/general/upfeathers.png');
+    color: #706F62;
+    /*background-image: url('images/general/seigaiha.png');*/
+    background-repeat: repeat;
 }
 
 /*=-------------------------------=
@@ -100,9 +103,9 @@ HOME
 }
 
 img#homeselfie{
-    max-width: 500px;
+    max-width: 700px;
     padding-left: 30px;
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 /*=-------------------------------=
@@ -175,8 +178,9 @@ CONTACT
 }
 
 .social{
-    margin-top: 17%;
-    filter: grayscale(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-info li{
@@ -184,23 +188,27 @@ CONTACT
     margin: 1rem;
 }
 
-.imagesize{
-    max-width: 100%;
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+
 }
 
-img.token{
-    max-width: 45%;
-}
 /*--------------------------------------------------------
 NAV
 --------------------------------------------------------*/
 
 .nav{
-    background-color: #a6a6a6;
+    background-color: #95A78D;
     text-align: center;
     position: fixed;
     bottom: -17px;
     width: 100%;
+    -webkit-box-shadow: 0px -3px 28px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -3px 28px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px -3px 28px -5px rgba(0,0,0,0.75);
 }
 
 nav ul{
@@ -272,9 +280,37 @@ GRID SYSTEM
 
 .icon{
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
+    width: 300px;
 }
+
+
+.icon img{
+    width: 100%;
+}
+
+/* -----------------------
+
+animoooooottionnnnnn
+
+------------------------*/
+.animate{
+    transform: rotate3d(-2,1,0, -180deg);
+}
+
+.imagesize{
+    transform-style: preserve-3d;
+    transition: all 2.0s ease-in-out;
+}
+
+.imagesize2{
+    transform-style: preserve-3d;
+    transition: all 2.0s ease-in-out;
+
+}
+
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
