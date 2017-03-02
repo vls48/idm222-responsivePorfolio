@@ -12,6 +12,15 @@
 #
 */
 
+body{
+    font-family: 'Prata', serif;
+}
+
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+
+
 
 /*
 #                                                               /$$
@@ -100,6 +109,7 @@ HOME
 
 .col-6.home-text{
     padding-top: 200px;
+    width: 600px;
 }
 
 img#homeselfie{
@@ -206,9 +216,9 @@ NAV
     position: fixed;
     bottom: -17px;
     width: 100%;
-    -webkit-box-shadow: 0px -3px 28px -5px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px -3px 28px -5px rgba(0,0,0,0.75);
-    box-shadow: 0px -3px 28px -5px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px -1px 20px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px -1px 20px -5px rgba(0,0,0,0.75);
+    box-shadow: 0px -1px 20px -5px rgba(0,0,0,0.75);
 }
 
 nav ul{
@@ -311,62 +321,21 @@ animoooooottionnnnnn
 
 }
 
+/*----------------------------------------------------------------------------------------------
 ----------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------
-----------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------*/
 
-/*media queries from week 4, not ready to impliment into actual code yet but keeping examples for refernces
-/*
-@media screen and (min-width: 635px) {
-    .home-intro {
-        background-color: white;
-        color: black;
+
+@media (max-width: 1300px) {
+    li{
+        display: inline-block;
+        margin: 1.5rem 2rem;
+    }
+
+    .home-text{
+        background-color: rgba(215,208,200, .5);
+        border-radius: 4px;
+        width: 400px;
     }
 } 
 
-
-@media screen and (max-width: 879px) {
-    .home-intro {
-        background-color: teal;
-        color: black;
-        font-size: .7rem;
-        transition: font-size 1s ease;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .section {
-        background-color: teal;
-        color: white;
-        font-size: .6rem;
-        transition: font-size 1s ease; 
-    }
-
-    .resume-wrap{
-    	background: black;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .section {
-        background-color: lightgrey;
-        color: black; 
-    }
-
-    .resume-wrap{
-    	background: black;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .contact-input{
-    	display: block;
-    	width: 100%;
-    }
-    .contact-info {
-    	display: block;
-    	float: left;
-		width: 100%;
-      }
-}
-*/
