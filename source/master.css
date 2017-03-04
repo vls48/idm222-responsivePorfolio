@@ -83,16 +83,16 @@ body{
 /*=-------------------------------=
 HOME
 =-------------------------------=*/
-.home-intro{
+/*.home-intro{
 	background-color: black;
 	width: 50%;
 	margin: auto;
 	color: white;
 	padding: 2rem;
 	margin-top: 2rem;
-}
+}*/
 
-.section{
+/*.section{
 	background: darkgray;
 	color: dimgrey;
 	width: 33%;
@@ -100,16 +100,15 @@ HOME
 	margin: auto;
 	padding-left: 1rem;
 	padding-right: 1rem;
-}
+}*/
 
 .text{
-    text-align: right;
-    padding-right: 30px; 
+    text-align: right;   
 }
 
-.col-6.home-text{
+.home-text{
     padding-top: 200px;
-    width: 600px;
+
 }
 
 img#homeselfie{
@@ -332,10 +331,97 @@ animoooooottionnnnnn
         margin: 1.5rem 2rem;
     }
 
+
+/*----
+ INDEX
+-----*/
     .home-text{
         background-color: rgba(215,208,200, .5);
         border-radius: 4px;
-        width: 400px;
+        width: 100%;
+        padding: 1.5rem;
+
     }
+
+    img#homeselfie{
+    max-width: 100%;
+    padding-left: 30px;
+    padding-top: 20px;
+    }
+
+    .col-6{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+/*----
+ RESUME
+-----*/
+    .award{
+        padding-top: 2rem;
+    }
+
 } 
+
+
+@media (max-width: 750px) {
+  .nav li{
+        margin: 1rem 1rem;
+    }
+
+    .text-resume{
+        font-size: 1.5rem;
+    }
+    
+    img.award{
+        width: 100%;
+        max-width: 177px;
+    }
+
+    #tagline{
+        margin: 0px;
+    }
+
+
+    img#upcoming{
+        width: 100%;
+        padding: 0 2rem 0;
+    }
+}
+
+@media (max-width: 680px) {
+    .col-4{
+        width: 100%;
+    }
+
+    .text-honors li{
+        text-align: center;
+    }
+
+    ul.lato{
+        padding-left: 0px;
+    }
+}
+
+
+@media (max-width: 550px) {
+    .col-6{
+        width: 100%;
+        flex: display;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-text{
+        padding-top: 350px;
+    }
+    
+    img#homeselfie{
+    max-width: 100%;
+    margin: auto;
+    padding-top: 50px;
+    }
+
+}
+
 
