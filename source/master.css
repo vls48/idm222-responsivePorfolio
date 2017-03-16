@@ -83,24 +83,6 @@ body{
 /*=-------------------------------=
 HOME
 =-------------------------------=*/
-/*.home-intro{
-	background-color: black;
-	width: 50%;
-	margin: auto;
-	color: white;
-	padding: 2rem;
-	margin-top: 2rem;
-}*/
-
-/*.section{
-	background: darkgray;
-	color: dimgrey;
-	width: 33%;
-	display: block;
-	margin: auto;
-	padding-left: 1rem;
-	padding-right: 1rem;
-}*/
 
 .text{
     text-align: right;   
@@ -344,7 +326,7 @@ animoooooottionnnnnn
     }
 
     img#homeselfie{
-    max-width: 100%;
+    width: 100%;
     padding-left: 30px;
     padding-top: 20px;
     }
@@ -387,6 +369,14 @@ animoooooottionnnnnn
         width: 100%;
         padding: 0 2rem 0;
     }
+
+     .child{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    margin-bottom: 50px;
+    max-width: 70%;
+    }
 }
 
 @media (max-width: 680px) {
@@ -407,20 +397,31 @@ animoooooottionnnnnn
 @media (max-width: 550px) {
     .col-6{
         width: 100%;
-        flex: display;
         align-items: center;
         justify-content: center;
     }
-
-    .home-text{
-        padding-top: 350px;
+    
+    .child{
+    display: flex;
+    align-items:  center;
+    justify-content: center;
+    margin-bottom: 50px;
     }
     
     img#homeselfie{
-    max-width: 100%;
+    /*position: absolute;*/
+    top: 0;
+    max-width: 400px;
+    width: 100%;
     margin: auto;
     padding-top: 50px;
     }
+    
+    .home-text{
+    margin-bottom: 100px;
+    }
+
+
 
 }
 
