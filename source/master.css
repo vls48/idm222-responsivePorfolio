@@ -191,7 +191,7 @@ CONTACT
 NAV
 --------------------------------------------------------*/
 
-.nav{
+.row-nav{
     background-color: #95A78D;
     text-align: center;
     position: fixed;
@@ -217,15 +217,20 @@ ul li a{
     text-decoration: none;
 }
 
+.ham-menu{
+    display: none;
+}
+
+
 /*--------------------------------------------------------
 GRID SYSTEM
 --------------------------------------------------------*/
 
-.row{
+.row-nav{
     overflow: auto;
 }
 
-.row::after {
+.row-nav::after {
     content: "";
     clear: both;
     display: block;
@@ -345,6 +350,9 @@ animoooooottionnnnnn
 
 } 
 
+ #nav-list{
+        padding: 0px;
+    }
 
 @media (max-width: 750px) {
   .nav li{
@@ -364,18 +372,21 @@ animoooooottionnnnnn
         margin: 0px;
     }
 
-
     img#upcoming{
         width: 100%;
         padding: 0 2rem 0;
     }
 
      .child{
-    display: flex;
-    align-items:  center;
-    justify-content: center;
-    margin-bottom: 50px;
-    max-width: 70%;
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+        margin-bottom: 50px;
+        max-width: 70%;
+    }
+    
+    .text-upcoming{
+        padding: 0 2rem 0;
     }
 }
 
@@ -387,14 +398,11 @@ animoooooottionnnnnn
     .text-honors li{
         text-align: center;
     }
-
-    ul.lato{
-        padding-left: 0px;
-    }
+    
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     .col-6{
         width: 100%;
         align-items: center;
@@ -402,27 +410,47 @@ animoooooottionnnnnn
     }
     
     .child{
-    display: flex;
-    align-items:  center;
-    justify-content: center;
-    margin-bottom: 50px;
+        display: flex;
+        align-items:  center;
+        justify-content: center;
+        margin-bottom: 50px;
     }
     
     img#homeselfie{
-    /*position: absolute;*/
-    top: 0;
-    max-width: 400px;
-    width: 100%;
-    margin: auto;
-    padding-top: 50px;
+        /*position: absolute;*/
+        top: 0;
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+        padding-top: 50px;
     }
     
     .home-text{
-    margin-bottom: 100px;
+        margin-bottom: 100px;
     }
 
+    .ham-menu{
+        display: block;
+        margin: auto;
+        margin-top: 5px;
+    }
 
+    .visually-hidden{
+        display: absolute;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+
+        width: 1px;
+        height: 1px;
+    }
+
+    #nav-list li{
+        padding: 1rem;
+        width: 100%;
+        margin: auto;
+    }
 
 }
+
 
 

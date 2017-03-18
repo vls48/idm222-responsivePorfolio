@@ -1,20 +1,15 @@
-var tokenFlip = document.getElementById('token');
-var array = document.getElementById('child')
-var imgArray = array.children;
+//GLOBAL VARIABLES 
+var iconObj = document.querySelector('.ham-menu');
+var menulist = document.getElementById('nav-list');
 
-tokenFlip.addEventListener('click', function(evt) {
-	flip(evt, 'token');
+//LISTENER
+iconObj.addEventListener('click', function(evt) {
+	menu(evt, '.ham-menu');
 }, false);
 
-function flip(evt) {
 
-	for(lp = 0; lp < imgArray.length; lp++) {
-		imgArray[lp].classList.remove('animate');
-	}
-
-	imgArray[0].classList.add('animate');
-	console.log('it werk');
-
-
-	imgArray[1].classList.add('animate');
+//FUNCTION
+function menu(evt) {
+	console.log('heyyyy');
+	menulist.classList.toggle('visually-hidden');
 }
